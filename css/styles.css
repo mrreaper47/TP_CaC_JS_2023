@@ -1,0 +1,592 @@
+/* **** */
+/* ROOT */
+/* **** */
+/* Limpieza de caracteristicas de HTML*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* ***************** */
+/* NAVBAR - Boostrap */
+/* ***************** */
+
+/* Cambiar el color de fordo del NAVBAR*/
+.navbar-expand-lg.navbar-dark {
+    /* --bs-bg-opacity: 1; */
+    /* background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; */
+    background-color: #353A40 !important;
+}
+
+.navbar-brand-h1 {
+    color: #FEFFFF;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar img {
+    width: 90px;
+}
+
+.navbar .navbar-nav{
+    text-align: center;
+}
+
+.navbar .navbar-nav a:last-child{
+    color: #26A943;
+}                 
+
+/* ***************** */
+/* Section Conf BS AS*/
+/* ***************** */
+
+.conferencia {
+    background-image: url(../img/ba1.jpg);
+    /*No usar auto - se deforma en tamaños muy grandes*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*Forzar a que use el 100% de la altura permitida*/
+    height: 100vh;
+    color: #FEFEFF;
+}
+
+.conferencia .dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.conferencia .container-flex {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+
+.conferencia .content {
+    width: 50%;
+    margin-bottom: 10vh; 
+}
+
+.conferencia .content h1 {
+    text-align: right;
+}
+
+.conferencia .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+
+.conferencia .buttons a {
+    color: #FEFEFF;
+    text-decoration: none;
+
+}
+
+.conferencia .btn {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem; 
+    border-radius: 5px;
+}
+
+.conferencia .btn-transparent {
+    border: 1px solid #FEFEFF;
+}
+
+.conferencia .btn-transparent:hover {
+    background-color: rgba(255, 255, 255, .55);
+    color: #353A40;
+    border: 1px solid rgba(255, 255, 255, .55);
+}
+
+.conferencia .btn-solid {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.conferencia .btn-solid:hover {
+    background-color: rgba(0, 128, 0, 0.5);
+    border: 1px solid rgba(0, 128, 0, 0.5);
+    color: #FEFEFF;
+}
+
+/* ******** */
+/* ORADORES */
+/* ******** */
+
+.oradores .presentacion {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.oradores .container-oradores {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.oradores .foto {
+  width: 30%;
+  min-width: 300px;  
+}
+
+.oradores .foto img {
+  width: 100%;
+}
+
+.oradores .foto :not(img) {
+  padding: 0 15px;
+}
+
+.foto .temas {
+  margin-top: 15px;
+  display: flex;
+}
+
+.foto .temas p {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0px 5px 0px 5px;
+  margin: 0 1px 0 15px ;
+}
+
+.foto h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.foto p {
+  line-height : 30px;
+  margin: 20px 15px 0px 15px
+}
+
+.foto .temas .javascript {
+  background-color: #FEC107;
+  border-radius: 5px;
+}
+
+.foto .temas .react {
+  background-color: #19A1B9;
+  color: white;
+  border-radius: 5px;
+}
+
+.foto .temas .negocios {
+  background-color: #6E7780;
+  color: white;
+  border-radius: 5px;
+}
+
+.foto .temas .startups {
+  background-color: #DD3546;
+  color: white;
+  border-radius: 5px;
+}
+
+/* ********* */
+/* NOVEDADES */
+/* ********* */
+
+.container-nov {
+  display: flex;
+  margin-top: 15px;
+}
+
+.container-nov img {
+  width: 50%;
+}
+
+.container-nov .novedades-texto {
+  background-color: #333A40;
+  color: #FFFEFF;
+  padding: 15px;
+}
+
+.container-nov .novedades-texto h1 {
+  font-weight: 600;
+}
+
+.container-nov .novedades-texto p {
+  line-height : 30px;
+}
+
+.container-nov .btn {
+  border-radius: 5px;
+  color: #FFFEFF;
+}
+
+.container-nov .btn-transparent {
+  border: 1px solid #FFFEFF;
+}
+
+.container-nov .btn-transparent:hover {
+  background-color: rgba(104, 87, 87, 0.199);
+  color: cadetblue;
+  border: 1px solid rgba(104, 87, 87, 0.199);
+  transition: 0.5s;
+}
+
+/* ********** */
+/* FORMULARIO */
+/* ********** */
+
+.form .title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form .title h6 {
+  font-weight: 200;
+}
+
+.form .title p {
+  font-weight: 600;
+}
+
+.form .title .underline{
+  text-decoration: underline dotted #432628;
+}
+
+.form .container-form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form .container-form .datos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form .container-form .input-name {
+  width: 48%;
+  padding: 10px 7px;
+  border-radius: 5px;
+  border: 1px solid #CDD4DA;
+}
+
+.form .container-form .input-name:focus {
+  outline: 1px solid #495057;
+}
+
+.form .container-form .input-about {
+  width: 100%;
+  padding: 10px 7px;
+  border-radius: 5px;
+  border: 1px solid #CDD4DA;
+}
+
+.form .container-form .input-about:focus {
+  outline: 1px solid #495057;
+}
+
+.form .container-form .btn-submit {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: rgba(150, 201, 62, 0.8);
+  color: #F7FFFF;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+}
+
+.form .container-form .btn-submit:hover {
+  background-color: rgba(150, 201, 62, 1);
+  color: #F7FFFF;
+  transition: 0.5s;
+}
+
+/* ******* */
+/* TICKETS */
+/* ******* */
+
+.tickets .container-tickets {
+  width: 90%;
+  max-width: 800px;
+  margin: 10vh auto;
+}
+
+.tickets-category {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+
+.tickets-category .estudiante,
+.trainee,
+.junior {
+  width: 30%;
+  min-width: 180px;
+  text-align: center;
+  padding: 8px;
+  margin: 8px 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.tickets-category .estudiante:hover,
+.trainee:hover,
+.junior:hover {
+  transform: scale(0.97);
+}
+
+.tickets-category h2 {
+  font-size: 24px;
+
+}
+
+.tickets-category h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tickets-category h5 {
+  font-size: 16px;
+  color: #212529;
+}
+
+.tickets-category h6 {
+  font-size: 10px;
+  color: #6C757D;
+}
+
+.tickets-category .estudiante {
+  border-radius: 5px;
+  border: 2px solid #007BFF;
+}
+
+
+.tickets-category .trainee {
+  border-radius: 5px;
+  border: 2px solid #17A2B8;
+}
+
+.tickets-category .junior {
+  border-radius: 5px;
+  border: 2px solid #FFC107;
+}
+
+
+.container-tickets .tickets-text {
+  text-align: center;
+}
+
+.tickets-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tickets-form .ticketsFirstName,
+.ticketsLastName {
+  width: 49%;
+  margin: 8px 0;
+  border-radius: 3px;
+  border: 1px solid #CED4DA;
+  padding: 5px;
+}
+
+.tickets-form .ticketsEmail {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #CED4DA;
+  padding: 4px;
+}
+
+.tickets-form .labelTicketsQuantity,
+.labelTicketsCategory {
+  width: 49%;
+  margin: 8px 0;
+}
+
+.tickets-form .ticketsQuantity,
+.ticketsCategory {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #CED4DA;
+  padding: 4px;
+}
+
+.tickets-form .ticketsCategory {
+  background-color: transparent;
+  color: #495057;
+}
+
+
+.tickets-form .ticketsOutput {
+  width: 100%;
+  background-color: rgb(155, 200, 222);
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  color: #004085;
+}
+
+.ticketsOutput .ticketsValue {
+  float: left;
+  }
+
+.ticketsOutput .ticketsBuy {
+float: right;
+cursor: pointer;
+}
+
+.tickets-form .ticketsBuy::after {
+  font: var(--fa-font-solid);
+  content: "\f07a";
+}
+
+
+.tickets-form .btnTickets {
+  width: 49%;
+  background-color: #97C93E;
+  color: #FFFFFF;
+  margin: 8px 0;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ****** */
+/* FOOTER */
+/* ****** */
+
+.footer {
+  background-image: linear-gradient(to right, #1B3542, #1E4F6D); 
+}
+
+.footer .container-footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container-footer a {
+  text-decoration: none;
+  color: #FEFEFE;
+  padding: 45px 0;
+  width: 100px;
+  text-align: center;
+}
+
+.footer .container-footer a:hover {
+  color: black;
+}
+
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
+
+/* MEDIA 992*/
+@media(max-width: 992px) {
+    .conferencia .content {
+      width: 100%;
+      margin-bottom: 20%;
+      text-align: center;
+    }
+  
+    .conferencia .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .form .container-form {
+      width: 65%;
+    }
+  
+  }
+  
+/* MEDIA 768*/
+@media(max-width: 768px) {
+  .container-nov {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-nov img {
+    width: 100%;
+  }
+
+  .novedades-texto .btn {
+    width: 50%;
+  }
+
+  .form .container-form .datos {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .form .container-form .datos .input-name {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form .container-form {
+    width: 80%;
+  }
+
+  .footer {
+    background-image: linear-gradient(to bottom, #1B3542, #1E4F6D);
+  }
+
+  .footer .container-footer {
+    flex-direction: column;
+    padding: 15px 0;
+   }
+
+   .footer .container-footer a {
+    padding: 7px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
+/* MEDIA 576*/
+@media(max-width: 576px) {
+  .conferencia .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tickets-form .ticketsFirstName,
+  .ticketsLastName {
+    width: 100%;
+  }
+
+
+  .tickets-form .labelTicketsQuantity,
+  .labelTicketsCategory {
+    width: 100%;
+  }
+
+  .tickets-form .btnTickets {
+    width: 100%;
+
+  }
+
+}
